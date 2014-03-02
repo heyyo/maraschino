@@ -617,6 +617,57 @@ AVAILABLE_MODULES = [
         ]
     },
     {
+        'name': 'deluge',
+        'label': 'Deluge',
+        'description': 'Show and control your torrents in Deluge',
+        'static':  False,
+        'poll': 10.
+        'delay': 0,
+        'settings': [
+                {
+                'key': 'deluge_ip',
+                'value': 'localhost'
+                'description': 'Deluge hostname or ip',
+                },
+                'key': 'deluge_port',
+                'value': '8888',
+                'description': 'Deluge port',
+                },
+                {
+                'key': 'deluge_user',
+                'value': '',
+                'description': 'Deluge Username',
+                },
+                {
+                'key': 'deluge_password',
+                'value': '',
+                'description': 'Deluge Password',
+                },
+                {
+                'key': 'deluge_webroot',
+                'value': '',
+                'description': 'Deluge webroot',
+                },
+                {
+                'key':'deluge_https',
+                'value':'0',
+                'description': 'Use https',
+                'type': 'bool',
+                },
+                {
+                'key':'deluge_show_que',
+                'value':'all',
+                'description': 'Show torrents',
+                'type': 'select',
+                'options': [
+                    {'value': 'all', 'label': 'all'},
+                    {'value': 'download', 'label': 'downloading'},
+                ]
+            },
+        ]
+    },
+    
+    {
         'name': 'sickbeard',
         'label': 'Sickbeard Manager',
         'description': 'Manage Sickbeard from within Maraschino',

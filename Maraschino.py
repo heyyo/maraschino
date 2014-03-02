@@ -48,6 +48,7 @@ def import_modules():
     import modules.controls
     import modules.couchpotato
     import modules.currently_playing
+    import modules.deluge
     import modules.diskspace
     import modules.headphones
     import modules.index
